@@ -25,17 +25,23 @@ C++ provides a variety of data types, such as integers, floating-point numbers, 
 Here's an example of how to define and use variables in C++:
 
 ```c++ */
+
+/*===>using namespace std;" is like a shortcut in C++ that saves you from repeatedly typing "std::" before standard library names. It's like a magical chant that grants you direct access to cout, cin, and other useful tools. Just be cautious not to mix up namespaces and use it wisely, especially in larger projects. It's a quick and convenient trick for small adventures in the land of coding.
+*/
 #include <iostream>
+
+using namespace std;
+
 int main() {
     int age = 25;
     double salary = 5000.50;
     char grade = 'A';
     bool isEmployed = true;
     
-    std::cout << "Age: " << age << std::endl;
-    std::cout << "Salary: " << salary << std::endl;
-    std::cout << "Grade: " << grade << std::endl;
-    std::cout << "Is employed? " << isEmployed << std::endl;
+    cout << "Age: " << age << endl;
+    cout << "Salary: " << salary << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Is employed? " << isEmployed << endl;
 
     return 0;
 }
@@ -52,18 +58,21 @@ Here's an example of how to use an if-else statement in C++:
 ```c++
 #include <iostream>
 
+using namespace std;
+
 int main() {
     int age = 25;
     
     if (age >= 18) {
-        std::cout << "You are eligible to vote." << std::endl;
+        cout << "You are eligible to vote." << endl;
     }
     else {
-        std::cout << "You are not eligible to vote." << std::endl;
+        cout << "You are not eligible to vote." << endl;
     }
 
     return 0;
 }
+
 
 /*
 In this code, we use an if-else statement to check whether a person is eligible to vote. If the person's age is greater than or equal to 18, we output the message "You are eligible to vote." Otherwise, we output the message "You are not eligible to vote."
@@ -78,6 +87,8 @@ Here's an example of how to define and use a function in C++:
 
 #include <iostream>
 
+using namespace std;
+
 int square(int num) {
     return num * num;
 }
@@ -85,7 +96,7 @@ int square(int num) {
 int main() {
     int num = 5;
     int result = square(num);
-    std::cout << "The square of " << num << " is " << result << std::endl;
+    cout << "The square of " << num << " is " << result << endl;
     return 0;
 }
 /*
@@ -99,6 +110,8 @@ Here's an example of how to define a class and create objects from it in C++:
 
 */
 #include <iostream>
+
+using namespace std;
 
 class Rectangle {
     private:
@@ -120,8 +133,8 @@ int main() {
     Rectangle rect1(5, 10);
     Rectangle rect2(3, 8);
     
-    std::cout << "Area of rect1: " << rect1.getArea() << std::endl;
-    std::cout << "Area of rect2: " << rect2.getArea() << std::endl;
+    cout << "Area of rect1: " << rect1.getArea() << endl;
+    cout << "Area of rect2: " << rect2.getArea() << endl;
 
     return 0;
 }
