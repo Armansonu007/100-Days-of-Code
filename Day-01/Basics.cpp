@@ -14,7 +14,6 @@ int main() {
     std::cout << "Hello, World!";
     return 0;
 }
-
 /*
 In this code, we first include the `<iostream>` header file, which provides input and output stream classes in C++. We then define the `main()` function, which is the entry point of the program. Inside the `main()` function, we use the `std::cout` object to output the message "Hello, World!" to the console.
 
