@@ -11,11 +11,11 @@ Arrays are a fundamental data structure in C++ that allow you to store multiple 
 
 3. Looping Through an Array:
    - Use a loop (such as a `for` loop) to iterate through the array elements and perform operations on them. For example:
-   ```
+   
    for (int i = 0; i < 5; i++) {
        cout << myArray[i] << " ";
    }
-   ```
+   
 
 4. Array Questions with Code and Answers:
 
